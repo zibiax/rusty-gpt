@@ -25,5 +25,4 @@ struct OAIChoices {
 #[derive(Serialize, Debug)
 struct OAIRequest {
 
-fn main () {
-
+fn main () {}
