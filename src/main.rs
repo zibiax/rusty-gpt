@@ -33,7 +33,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error + Send + Sync>> {
     let client = Client::builder().build(https);
     let uri = "https://api.openai.com/v1/engines/text-davinci-001/completions";
     
-    let oai_token: String = env::var("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").unwrap();
+    let oai_token = "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".to_string();
     let auth_header_val = format!("Bearer {}", oai_token);
 
     println!("{esc}c", esc = 27 as char);
